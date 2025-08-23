@@ -37,7 +37,7 @@ const BlogStanderd = ({ blogs, currentPage = 1 }) => {
                   <div className="content">
                     <div className="row justify-content-center">
                       <div className="col-10">
-                        <Link href={`/blog/blog-dark`}>
+                        <Link href={`/articles`}>
                           <a className="date">
                             <span className="num">{blogItem.date.day}</span>
                             <span>{blogItem.date.month}</span>
@@ -46,7 +46,7 @@ const BlogStanderd = ({ blogs, currentPage = 1 }) => {
                         <div className="tags">
                           {blogItem.tags &&
                             blogItem.tags.map((tag, index) => (
-                              <Link key={index} href="/blog/blog-dark">
+                              <Link key={index} href="/articles">
                                 {tag}
                               </Link>
                             ))}
@@ -76,7 +76,7 @@ const BlogStanderd = ({ blogs, currentPage = 1 }) => {
                   {/* Previous page button */}
                   {currentPage > 1 && (
                     <span>
-                      <Link href={`/blog/blog-dark?page=${currentPage - 1}`}>
+                      <Link href={`/articles?page=${currentPage - 1}`}>
                         <a>
                           <i className="fas fa-angle-left"></i>
                         </a>
@@ -90,7 +90,7 @@ const BlogStanderd = ({ blogs, currentPage = 1 }) => {
                       key={i}
                       className={currentPage === i + 1 ? "active" : ""}
                     >
-                      <Link href={`/blog/blog-dark?page=${i + 1}`}>
+                      <Link href={`/articles?page=${i + 1}`}>
                         <a>{i + 1}</a>
                       </Link>
                     </span>
@@ -99,7 +99,7 @@ const BlogStanderd = ({ blogs, currentPage = 1 }) => {
                   {/* Next page button */}
                   {currentPage < totalPages && (
                     <span>
-                      <Link href={`/blog/blog-dark?page=${currentPage + 1}`}>
+                      <Link href={`/articles?page=${currentPage + 1}`}>
                         <a>
                           <i className="fas fa-angle-right"></i>
                         </a>

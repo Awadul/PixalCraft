@@ -15,7 +15,7 @@ const Blogs2 = () => {
                 We provide company and finance service for startups and company
                 business.
               </p>
-              <Link href="/blog/blog-dark">
+              <Link href="/articles">
                 <a>
                   <span>More Blog Posts</span>
                 </a>
@@ -30,7 +30,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -38,7 +38,7 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>
@@ -61,7 +61,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -69,7 +69,7 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>
@@ -92,7 +92,7 @@ const Blogs2 = () => {
               <div className="cont valign">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -100,7 +100,7 @@ const Blogs2 = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="tag">
                         <span>WordPress</span>
                       </a>

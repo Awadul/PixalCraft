@@ -21,7 +21,7 @@ const NextProject = ({ nextProject }) => {
               ></div>
               <div className="cont">
                 <h1>
-                  <Link href={`/project-details2/project-details2-dark?id=${nextProject.id}`}>
+                  <Link href={`/project-detailed?id=${nextProject.id}`}>
                     <a>
                       {nextProject.title?.big || nextProject.title || "Next Project"}
                       <span className="icon">

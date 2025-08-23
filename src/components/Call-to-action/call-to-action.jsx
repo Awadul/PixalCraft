@@ -26,7 +26,7 @@ const CallToAction = ({img}) => {
 
             <div className="col-md-4 col-lg-3 valign">
               <Link
-                href={`/contact/contact-dark`}
+                href={`/contact-us-`}
               >
                 <a
                   className="butn bord curve wow fadeInUp"

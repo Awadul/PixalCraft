@@ -42,7 +42,7 @@ const MinimalArea2 = () => {
                   We work with some of the most successful businesses.
                 </li>
               </ul>
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about`}>
                 <a
                   className="butn bord curve mt-40 wow fadeInUp"
                   data-wow-delay=".8s"

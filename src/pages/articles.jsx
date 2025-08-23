@@ -1,10 +1,10 @@
 import React from "react";
-import BlogStanderd from "../../components/Blog-standerd/blog-standerd";
-import blogs from "../../data/blog1.json";
+import BlogStanderd from "../components/Blog-standerd/blog-standerd";
+import blogs from "../data/blog1.json";
 import { useRouter } from "next/router";
-import DarkTheme from "../../layouts/Dark";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
+import DarkTheme from "../layouts/Dark";
+import Navbar from "../components/Navbar/navbar";
+import Footer from "../components/Footer/footer";
 
 const BlogDark = () => {
   const router = useRouter();

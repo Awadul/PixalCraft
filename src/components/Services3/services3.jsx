@@ -32,7 +32,7 @@ const Services3 = () => {
                 Implementation and rollout of new network infrastructure,
                 including consolidation.
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -49,7 +49,7 @@ const Services3 = () => {
                 Implementation and rollout of new network infrastructure,
                 including consolidation.
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -66,7 +66,7 @@ const Services3 = () => {
                 Implementation and rollout of new network infrastructure,
                 including consolidation.
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about">
                 <a className="more-stroke">
                   <span></span>
                 </a>
@@ -83,7 +83,7 @@ const Services3 = () => {
                 Implementation and rollout of new network infrastructure,
                 including consolidation.
               </p>
-              <Link href="/about/about-dark">
+              <Link href="/about">
                 <a className="more-stroke">
                   <span></span>
                 </a>

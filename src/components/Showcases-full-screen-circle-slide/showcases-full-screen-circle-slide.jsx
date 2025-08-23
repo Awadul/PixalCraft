@@ -88,7 +88,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                       <div className="o-hidden">
                         <h1 data-swiper-parallax="-2000">
                           <Link
-                            href={`/project-details2/project-details2-dark`}
+                            href={`/project-detailed`}
                           >
                             <a>
                               <div className="stroke">{slide.title.first}</div>
@@ -102,7 +102,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                       <div className="cap">
                         <h1 data-swiper-parallax="-2000">
                           <Link
-                            href={`/project-details2/project-details2-dark`}
+                            href={`/project-detailed`}
                           >
                             <a>
                               <div className="stroke">{slide.title.first}</div>

@@ -46,14 +46,14 @@ const Footer = ({ hideBGCOLOR }) => {
               <ul>
                 <li>
                   <div className="img">
-                    <Link href="/project-details2/project-details2-dark">
+                    <Link href="/project-detailed">
                       <a>
                         <img src="/img/Group 1686551828.png" alt="Software Development Project" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/project-details2/project-details2-dark">
+                    <Link href="/project-detailed">
                       <a>
                         <p>
                           Modern E-commerce Platform with React & Node.js
@@ -69,14 +69,14 @@ const Footer = ({ hideBGCOLOR }) => {
                 </li>
                 <li>
                   <div className="img">
-                    <Link href="/project-details2/project-details2-dark">
+                    <Link href="/project-detailed">
                       <a>
                         <img src="/img/portfolio/2.jpg" alt="Mobile App" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/project-details2/project-details2-dark">
+                    <Link href="/project-detailed">
                       <a>
                         <p>
                           Cross-platform Mobile App for Healthcare

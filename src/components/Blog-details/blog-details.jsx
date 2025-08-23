@@ -51,7 +51,7 @@ const BlogDetails = ({ blogPost }) => {
                       <div className="blog-meta mb-30">
                         <div className="tags mb-20">
                           {post.tags && post.tags.map((tag, index) => (
-                            <Link key={index} href="/blog/blog-dark">
+                            <Link key={index} href="/articles">
                               <a className="tag">{tag}</a>
                             </Link>
                           ))}
@@ -269,7 +269,7 @@ const BlogDetails = ({ blogPost }) => {
                   <a href="#0">Prev Post</a>
                 </span>
                 <span className="icon">
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/articles`}>
                     <a>
                       <i className="fas fa-th-large"></i>
                     </a>

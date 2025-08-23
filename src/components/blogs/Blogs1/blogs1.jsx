@@ -25,7 +25,7 @@ const Blogs1 = () => {
               <div className="cont">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                     <a  className="date">
                       <span>
                         <i>06</i> August
@@ -33,7 +33,7 @@ const Blogs1 = () => {
                     </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                     <a  className="tag">
                       <span>WordPress</span>
                     </a>
@@ -65,7 +65,7 @@ const Blogs1 = () => {
               <div className="cont">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                     <a  className="date">
                       <span>
                         <i>06</i> August
@@ -73,7 +73,7 @@ const Blogs1 = () => {
                     </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                     <a  className="tag">
                       <span>WordPress</span>
                     </a>

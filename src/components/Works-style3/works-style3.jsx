@@ -28,7 +28,7 @@ const WorksStyle3 = () => {
             <div className="items graphic wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
                 <Link
-                  href={`/project-details2/project-details2-dark`}
+                  href={`/project-detailed`}
                 >
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/1.jpg" alt="image" />
@@ -47,7 +47,7 @@ const WorksStyle3 = () => {
             <div className="items web brand wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
                 <Link
-                  href={`/project-details2/project-details2-dark`}
+                  href={`/project-detailed`}
                 >
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/2.jpg" alt="image" />
@@ -69,7 +69,7 @@ const WorksStyle3 = () => {
             >
               <div className="item-img">
                 <Link
-                  href={`/project-details2/project-details2-dark`}
+                  href={`/project-detailed`}
                 >
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/3.jpg" alt="image" />
@@ -91,7 +91,7 @@ const WorksStyle3 = () => {
             >
               <div className="item-img">
                 <Link
-                  href={`/project-details2/project-details2-dark`}
+                  href={`/project-detailed`}
                 >
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/4.jpg" alt="image" />

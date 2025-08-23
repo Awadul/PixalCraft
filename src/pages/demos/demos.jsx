@@ -373,7 +373,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/homepage/home5-dark">
+                    <Link href="/Welcome">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/3.png" alt="image" />
@@ -714,7 +714,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/works2/works2-dark">
+                    <Link href="/project-display">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/w2.png" alt="image" />
@@ -805,7 +805,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a target="_blank">
                         <div className="img">
                           <img
@@ -967,7 +967,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/about/about-dark">
+                    <Link href="/about">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/about.png" alt="image" />
@@ -1002,7 +1002,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/contact/contact-dark">
+                    <Link href="/contact-us-">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/contact-dark.png" alt="image" />

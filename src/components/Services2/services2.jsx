@@ -50,7 +50,7 @@ const Services2 = () => {
           </div>
         </div>
         <div className="smore">
-          <Link href="/about/about-dark">
+          <Link href="/about">
             <a>Discover More</a>
           </Link>
           <i className="fas fa-long-arrow-alt-right"></i>

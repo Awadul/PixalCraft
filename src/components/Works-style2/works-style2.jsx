@@ -112,7 +112,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
                   data-wow-delay=".4s"
                 >
                   <div className="item-img">
-                    <Link href={`/project-details2/project-details2-dark?id=${project.id}`}>
+                    <Link href={`/project-detailed?id=${project.id}`}>
                       <a className="imago wow">
                         <img src={project.projectHeaderImage} alt={project.title.big} />
                         <div className="item-img-overlay"></div>
@@ -122,10 +122,10 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
                   <div className="cont">
                     <h6>{project.title.small}</h6>
                     <span>
-                      <Link href={`/project-details2/project-details2-dark?id=${project.id}`}>
+                      <Link href={`/project-detailed?id=${project.id}`}>
                         {project.title.big}
                       </Link>,
-                      <Link href={`/works2/works2-dark`}>
+                      <Link href={`/project-display`}>
                         {project.categories[0]?.name || "Web Design"}
                       </Link>
                     </span>

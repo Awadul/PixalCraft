@@ -18,7 +18,7 @@ const Intro2 = ({ sliderRef }) => {
                 digital experiences, and print materials.
               </p>
               <Link
-                href={`/about/about-dark`}
+                href={`/about`}
               >
                 <a className="butn bord curve mt-30">
                   <span>About Us</span>

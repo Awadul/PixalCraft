@@ -1,15 +1,15 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
-import ProjectDetails2Header from "../../components/Project-details2-header/project-details2-header";
-import ProjectIntroduction from "../../components/Project-introduction/project-introduction";
-import ProjectGallery from "../../components/Project-gallery/project-gallery";
-import ProjectDescription from "../../components/Project-description/project-description";
-import ProjectVideo from "../../components/Project-video/project-video";
-import NextProject from "../../components/Next-project/next-project";
-import DarkTheme from "../../layouts/Dark";
-import ProjectDataArray from "../../data/project-details2.json";
+import Navbar from "../components/Navbar/navbar";
+import Footer from "../components/Footer/footer";
+import ProjectDetails2Header from "../components/Project-details2-header/project-details2-header";
+import ProjectIntroduction from "../components/Project-introduction/project-introduction";
+import ProjectGallery from "../components/Project-gallery/project-gallery";
+import ProjectDescription from "../components/Project-description/project-description";
+import ProjectVideo from "../components/Project-video/project-video";
+import NextProject from "../components/Next-project/next-project";
+import DarkTheme from "../layouts/Dark";
+import ProjectDataArray from "../data/project-details2.json";
 
 const ProjectDetails2Dark = () => {
   const router = useRouter();

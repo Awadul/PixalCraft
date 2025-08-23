@@ -38,7 +38,7 @@ const AboutUs6 = () => {
                 </p>
 
                 <Link
-                  href={`/about/about-dark`}
+                  href={`/about`}
                 >
                   <a className="butn bord mt-30">
                     <span>About Us</span>

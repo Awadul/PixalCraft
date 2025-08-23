@@ -16,7 +16,7 @@ const Services6 = () => {
               We provide all equipment and services, etc and ensure a safe and
               secure project site.
             </p>
-            <Link href="/about/about-dark">
+            <Link href="/about">
               <a className="custom-font more main-color">Read More</a>
             </Link>
           </div>
@@ -31,7 +31,7 @@ const Services6 = () => {
               We provide all equipment and services, etc and ensure a safe and
               secure project site.
             </p>
-            <Link href="/about/about-dark">
+            <Link href="/about">
               <a className="custom-font more main-color">Read More</a>
             </Link>
           </div>
@@ -46,7 +46,7 @@ const Services6 = () => {
               We provide all equipment and services, etc and ensure a safe and
               secure project site.
             </p>
-            <Link href="/about/about-dark">
+            <Link href="/about">
               <a className="custom-font more main-color">Read More</a>
             </Link>
           </div>
@@ -61,7 +61,7 @@ const Services6 = () => {
               We provide all equipment and services, etc and ensure a safe and
               secure project site.
             </p>
-            <Link href="/about/about-dark">
+            <Link href="/about">
               <a className="custom-font more main-color">Read More</a>
             </Link>
           </div>
@@ -76,7 +76,7 @@ const Services6 = () => {
               We provide all equipment and services, etc and ensure a safe and
               secure project site.
             </p>
-            <Link href="/about/about-dark">
+            <Link href="/about">
               <a className="custom-font more main-color">Read More</a>
             </Link>
           </div>

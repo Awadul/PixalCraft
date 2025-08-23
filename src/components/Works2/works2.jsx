@@ -108,14 +108,14 @@ const Works2 = ({ sliderRef }) => {
                             <div className="cont bgbox">
                               <h6>
                                 <Link
-                                  href={`/works2/works2-dark`}
+                                  href={`/project-display`}
                                 >
                                   <a>{project.categories[0]?.name || "Web Design"}</a>
                                 </Link>
                               </h6>
                               <h4>
                                 <Link
-                                  href={`/project-details2/project-details2-dark?id=${project.id}`}
+                                  href={`/project-detailed?id=${project.id}`}
                                 >
                                   <a>{project.title.big}</a>
                                 </Link>

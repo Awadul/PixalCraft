@@ -166,13 +166,13 @@ const Blogs4 = () => {
                         <div className="content">
                           <div className="tags">
                             {post.tags.map((tag, tagIndex) => (
-                              <Link key={tagIndex} href="/blog/blog-dark">
+                              <Link key={tagIndex} href="/articles">
                                 {tag}
                               </Link>
                             ))}
                           </div>
                           <div className="info">
-                            <Link href="/blog/blog-dark">
+                            <Link href="/articles">
                               <a>
                                 <i className="far fa-clock"></i>
                                 {post.date}

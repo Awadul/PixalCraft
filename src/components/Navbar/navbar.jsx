@@ -13,7 +13,7 @@ const Navbar = ({ lr, nr, theme }) => {
   };
 
   const handleDarkModeClick = () => {
-    router.push('/homepage/home5-dark/');
+    router.push('/Welcome/');
   };
 
   // Check if we're on a light theme page
@@ -86,12 +86,12 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/homepage/home5-light" : "/homepage/home5-dark"}>
+              <Link href={isLightTheme ? "/homepage/home5-light" : "/Welcome"}>
                 <a className="nav-link">Home</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={isLightTheme ? "/about/about-light" : "/about/about-dark"}>
+              <Link href={isLightTheme ? "/about/about-light" : "/about"}>
                 <a className="nav-link">About</a>
               </Link>
             </li>
@@ -112,7 +112,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/works2/works2-light" : "/works2/works2-dark"}>
+              <Link href={isLightTheme ? "/works2/works2-light" : "/project-display"}>
                 <a className="nav-link">Works</a>
               </Link>
             </li>
@@ -128,7 +128,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 Blog
               </span>
               <div className="dropdown-menu">
-                <Link href={`/blog/blog-dark`}>
+                <Link href={`/articles`}>
                   <a className="dropdown-item">Blog Standerd</a>
                 </Link>
                 <Link href={`/blog-list/blog-list-dark`}>
@@ -144,12 +144,12 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/blog/blog-light" : "/blog/blog-dark"}>
+              <Link href={isLightTheme ? "/blog/blog-light" : "/articles"}>
                 <a className="nav-link">Blog</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={isLightTheme ? "/contact/contact-light" : "/contact/contact-dark"}>
+              <Link href={isLightTheme ? "/contact/contact-light" : "/contact-us-"}>
                 <a className="nav-link">Contact</a>
               </Link>
             </li>

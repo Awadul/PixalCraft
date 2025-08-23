@@ -105,14 +105,14 @@ const Works3 = () => {
                         <div className="cont">
                           <h6>
                             <Link
-                              href={`/project-details2/project-details2-dark?id=${project.id}`}
+                              href={`/project-detailed?id=${project.id}`}
                             >
                               View Project
                             </Link>
                           </h6>
                           <h4>
                             <Link
-                              href={`/project-details2/project-details2-dark?id=${project.id}`}
+                              href={`/project-detailed?id=${project.id}`}
                             >
                               {project.title.big}
                             </Link>

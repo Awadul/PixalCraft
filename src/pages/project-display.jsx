@@ -1,9 +1,9 @@
 import React from "react";
-import DarkTheme from "../../layouts/Dark";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
-import WorksHeader from "../../components/Works-header/works-header";
-import WorksStyle2 from "../../components/Works-style2/works-style2";
+import DarkTheme from "../layouts/Dark";
+import Navbar from "../components/Navbar/navbar";
+import Footer from "../components/Footer/footer";
+import WorksHeader from "../components/Works-header/works-header";
+import WorksStyle2 from "../components/Works-style2/works-style2";
 
 const WorksDark = () => {
   const fixedHeader = React.useRef(null);

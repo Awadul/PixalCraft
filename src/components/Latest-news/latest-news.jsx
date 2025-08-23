@@ -24,7 +24,7 @@ const LatestNews = () => {
               <div className="cont">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -32,7 +32,7 @@ const LatestNews = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="tag">
                         <span className="main-color">Architecture</span>
                       </a>
@@ -62,7 +62,7 @@ const LatestNews = () => {
               <div className="cont">
                 <div>
                   <div className="info">
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="date">
                         <span>
                           <i>06</i> August
@@ -70,7 +70,7 @@ const LatestNews = () => {
                       </a>
                     </Link>
                     <span>/</span>
-                    <Link href="/blog/blog-dark">
+                    <Link href="/articles">
                       <a className="tag">
                         <span className="main-color">Architecture</span>
                       </a>
