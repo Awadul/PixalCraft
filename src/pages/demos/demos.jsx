@@ -826,7 +826,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/blog/blog-light">
+                    <Link href="/articles-light">
                       <a target="_blank">
                         <div className="img">
                           <img

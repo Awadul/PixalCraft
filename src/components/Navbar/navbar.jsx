@@ -144,7 +144,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/blog/blog-light" : "/articles"}>
+              <Link href={isLightTheme ? "/articles-light" : "/articles"}>
                 <a className="nav-link">Blog</a>
               </Link>
             </li>
