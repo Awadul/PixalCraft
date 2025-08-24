@@ -3,37 +3,47 @@
     {
       "id": 1,
       "image": "/img/team/1.jpg",
-      "title": "Stephanie Lawrence",
-      "sub": "CEO, Colabrio Media"
+      "title": "Ava Reynolds",
+      "sub": "Founder & CEO, PixelCraft"
     },
     {
       "id": 2,
       "image": "/img/team/2.jpg",
-      "title": "Alex Regelman",
-      "sub": "CEO, Colabrio Media"
+      "title": "Liam Carter",
+      "sub": "CTO, PixelCraft"
     },
     {
       "id": 3,
       "image": "/img/team/3.jpg",
-      "title": "Stacey Stamper",
-      "sub": "CEO, Colabrio Media"
+      "title": "Sophie Patel",
+      "sub": "Lead Designer, PixelCraft"
     },
     {
       "id": 4,
       "image": "/img/team/4.jpg",
-      "title": "Stephanie Lawrence",
-      "sub": "CEO, Colabrio Media"
+      "title": "Daniel Kim",
+      "sub": "Senior Developer, PixelCraft"
     }
   ],
   "skills": [
     {
       "id": 1,
-      "text": "UI / UX Design",
-      "value": "90%"
+      "text": "Web Development",
+      "value": "92%"
     },
     {
       "id": 2,
-      "text": "Apps Development",
+      "text": "Mobile App Development",
+      "value": "88%"
+    },
+    {
+      "id": 3,
+      "text": "UI / UX Design",
+      "value": "85%"
+    },
+    {
+      "id": 4,
+      "text": "Cloud Solutions",
       "value": "80%"
     }
   ]
