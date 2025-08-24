@@ -1002,7 +1002,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/contact-us-">
+                    <Link href="/contact-us">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/contact-dark.png" alt="image" />

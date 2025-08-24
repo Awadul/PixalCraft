@@ -7,28 +7,33 @@ import ProjectDataArray from "../../data/project-details2.json";
 const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
   // Create a mapping of category names to filter classes
   const categoryToFilterClass = {
-    CMS: "brand",
-    WordPress: "brand",
-    "Mobile App": "web",
-    "Web Design": "web",
-    "Web Development": "web",
-    "E-Commerce": "web",
-    "UI/UX Design": "graphic",
-    "Interior Design": "graphic",
-    Architecture: "graphic",
-    "Software Development": "graphic",
-    "Digital Publishing": "graphic",
-    "Sustainable Design": "graphic",
-    "Digital Marketing": "web",
+    // Content Management & Marketing
+    "CMS": "content",
+    "WordPress": "content",
+    "Digital Marketing": "content",
+    "Digital Publishing": "content",
+    
+    // Application Development
+    "Mobile App": "apps",
+    "Web Design": "apps",
+    "Web Development": "apps",
+    "E-Commerce": "apps",
+    "UI/UX Design": "apps",
+    
+    // Physical & Environmental Design
+    "Interior Design": "spatial",
+    "Architecture": "spatial",
+    "Sustainable Design": "spatial",
+    "3D Printing": "spatial"
   };
 
   // Get unique categories for the filter buttons
   const getFilterCategories = () => {
     // Map our internal filter classes to display names
     const filterLabels = {
-      brand: "CMS",
-      web: "Mobile App",
-      graphic: "Software Development",
+      "content": "Content Platforms",
+      "apps": "Smart Applications",
+      "spatial": "Product & Experience Design"
     };
 
     return Object.keys(filterLabels).map((filterClass) => ({
@@ -41,11 +46,11 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
   const getCategoryClass = (project) => {
     // Force certain projects into specific categories
     if (project.id === 7 || project.id === 8) {
-      return "brand"; // CMS
+      return "content"; // Content Platforms
     }
 
     if (project.id === 3 || project.id === 5 || project.id === 6) {
-      return "graphic"; // Software Development
+      return "spatial"; // Product & Experience Design
     }
 
     // Use the first category from project data
@@ -55,7 +60,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
     }
 
     // Default fallback
-    return "graphic";
+    return "apps";
   };
 
   React.useEffect(() => {
