@@ -214,17 +214,6 @@ const BlogDetails = ({ blogPost }) => {
                       )}
 
                       <div className="share-info">
-                        <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
                         <div className="tags">
                           {post.tags && post.tags.map((tag, index) => (
                             <React.Fragment key={index}>
@@ -247,17 +236,6 @@ const BlogDetails = ({ blogPost }) => {
                           {post.author} provides insights into how AI is reshaping industries and transforming 
                           human-computer interaction.
                         </p>
-                        <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
