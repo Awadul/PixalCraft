@@ -142,9 +142,8 @@ const VideoWithTestimonials = () => {
                   </div>
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                      PixelCraft delivers creative, high-performing digital solutions that help 
+                      brands grow and stand out in today’s competitive market.
                     </p>
                     <div className="info">
                       <div className="img">
