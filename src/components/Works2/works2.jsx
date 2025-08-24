@@ -31,7 +31,7 @@ const Works2 = ({ sliderRef }) => {
         <div className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10">
-              <div className="sec-head  text-center">
+              <div className="sec-head text-center">
                 <h6 className="wow fadeIn" data-wow-delay=".5s">
                   Latest Work
                 </h6>
@@ -93,7 +93,7 @@ const Works2 = ({ sliderRef }) => {
                       className="swiper-wrapper"
                       slidesPerView={1}
                     >
-                      {ProjectDataArray.slice(0, 6).map((project, index) => (
+                      {ProjectDataArray.map((project, index) => (
                         <SwiperSlide className="swiper-slide" key={project.id}>
                           <div
                             className="content wow fadeInUp"

@@ -12,6 +12,10 @@
     "date": "6 August 2022",
     "categories": [
       {
+        "name": "CMS",
+        "link": "/project-display"
+      },
+      {
         "name": "Web Design",
         "link": "/project-display"
       },
@@ -23,10 +27,6 @@
     "tags": [
       {
         "name": "Design",
-        "link": "/project-display"
-      },
-      {
-        "name": "WordPress",
         "link": "/project-display"
       },
       {
@@ -388,6 +388,221 @@
     ],
     "description": {
       "content": "The Creative Workspace project reimagines how professional environments can inspire innovation and wellbeing. By blending aesthetic beauty with functional design, these spaces not only enhance productivity but also contribute to employee satisfaction and retention."
+    },
+    "nextProject": {
+      "id": 7,
+      "title": "Mighty Buildings",
+      "image": "/img/portfolio/project2/listing7/bg7.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "title": {
+      "small": "Sustainable Architecture",
+      "big": "Mighty Buildings"
+    },
+    "clientURLLink": "https://www.halo-lab.com/projects/mighty-buildings",
+    "projectHeaderImage": "/img/portfolio/project2/listing7/bg7.jpg",
+    "videoLink": "https://vimeo.com/127203262",
+    "clientURLName": "Mighty Buildings",
+    "date": "3 March 2023",
+    "categories": [
+      {
+        "name": "CMS",
+        "link": "/project-display"
+      },
+      {
+        "name": "Sustainable Design",
+        "link": "/project-display"
+      },
+      {
+        "name": "Architecture",
+        "link": "/project-display"
+      }
+    ],
+    "tags": [
+      {
+        "name": "3D Printing",
+        "link": "/project-display"
+      },
+      {
+        "name": "Sustainable",
+        "link": "/project-display"
+      },
+      {
+        "name": "Future Living",
+        "link": "/project-display"
+      }
+    ],
+    "intro": {
+      "content": "Mighty Buildings is revolutionizing the construction industry with sustainable 3D-printed homes that combine cutting-edge technology with eco-friendly materials. Their approach drastically reduces construction waste while creating beautiful, energy-efficient living spaces.",
+      "spmList": [
+        {
+          "name": "Zero-waste 3D printing technology"
+        },
+        {
+          "name": "90% reduction in construction waste"
+        },
+        {
+          "name": "Carbon-neutral building process"
+        },
+        {
+          "name": "Customizable modular designs"
+        }
+      ]
+    },
+    "gallery": [
+      "/img/portfolio/project2/listing7/1.jpg",
+      "/img/portfolio/project2/listing7/2.jpg",
+      "/img/portfolio/project2/listing7/3.jpg",
+      "/img/portfolio/project2/listing7/4.jpg",
+      "/img/portfolio/project2/listing7/5.jpg",
+      "/img/portfolio/project2/listing7/6.jpg"
+    ],
+    "description": {
+      "content": "Mighty Buildings represents the future of sustainable living, using proprietary 3D printing technology to create homes that are not only environmentally responsible but also architecturally stunning. Their innovative process allows for complex designs that would be impossible with traditional construction methods, all while reducing the carbon footprint of housing production."
+    },
+    "nextProject": {
+      "id": 8,
+      "title": "Link by Car",
+      "image": "/img/portfolio/project2/listing8/bg8.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": {
+      "small": "Automotive UX",
+      "big": "Link by Car"
+    },
+    "clientURLLink": "https://www.halo-lab.com/project/linkbycar",
+    "projectHeaderImage": "/img/portfolio/project2/listing8/bg8.jpg",
+    "videoLink": "https://vimeo.com/127203262",
+    "clientURLName": "Link by Car",
+    "date": "17 April 2023",
+    "categories": [
+      {
+        "name": "CMS",
+        "link": "/project-display"
+      },
+      {
+        "name": "UX/UI Design",
+        "link": "/project-display"
+      },
+      {
+        "name": "Automotive",
+        "link": "/project-display"
+      }
+    ],
+    "tags": [
+      {
+        "name": "AI Interface",
+        "link": "/project-display"
+      },
+      {
+        "name": "Adaptive Design",
+        "link": "/project-display"
+      },
+      {
+        "name": "Autonomous Vehicles",
+        "link": "/project-display"
+      }
+    ],
+    "intro": {
+      "content": "Link by Car is pioneering adaptable interface design for the next generation of AI-driven vehicles. Their revolutionary platform creates intuitive connections between drivers and autonomous systems, ensuring safety while enhancing the driving experience.",
+      "spmList": [
+        {
+          "name": "Context-aware interface adaptation"
+        },
+        {
+          "name": "Multi-modal interaction design"
+        },
+        {
+          "name": "Real-time safety monitoring"
+        },
+        {
+          "name": "Personalized driver profiles"
+        }
+      ]
+    },
+    "gallery": [
+      "/img/portfolio/project2/listing8/1.jpg",
+      "/img/portfolio/project2/listing8/2.jpg",
+      "/img/portfolio/project2/listing8/3.jpg",
+      "/img/portfolio/project2/listing8/4.jpg",
+      "/img/portfolio/project2/listing8/5.jpg",
+      "/img/portfolio/project2/listing8/6.jpg"
+    ],
+    "description": {
+      "content": "Link by Car redefines the relationship between humans and autonomous vehicles through thoughtful design that respects both technological capabilities and human factors. The interface intelligently adapts to driving conditions, driver preferences, and vehicle capabilities, creating a seamless experience that builds trust in autonomous technology while maintaining the joy of driving."
+    },
+    "nextProject": {
+      "id": 9,
+      "title": "Bookclub24",
+      "image": "/img/portfolio/project2/listing9/bg9.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "title": {
+      "small": "Digital Publishing",
+      "big": "Bookclub24"
+    },
+    "clientURLLink": "https://www.halo-lab.com/projects/bookclub24",
+    "projectHeaderImage": "/img/portfolio/project2/listing9/bg9.jpg",
+    "videoLink": "https://vimeo.com/127203262",
+    "clientURLName": "Bookclub24",
+    "date": "9 June 2023",
+    "categories": [
+      {
+        "name": "E-Commerce",
+        "link": "/project-display"
+      },
+      {
+        "name": "Digital Publishing",
+        "link": "/project-display"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Literary",
+        "link": "/project-display"
+      },
+      {
+        "name": "E-Commerce",
+        "link": "/project-display"
+      },
+      {
+        "name": "Community",
+        "link": "/project-display"
+      }
+    ],
+    "intro": {
+      "content": "Bookclub24 is Germany's premier online destination for book collectors and literature enthusiasts. The digital rebirth of this beloved platform combines rich tradition with modern e-commerce capabilities, creating a vibrant community around rare and collectible books.",
+      "spmList": [
+        {
+          "name": "Advanced catalog search functionality"
+        },
+        {
+          "name": "Collector authentication system"
+        },
+        {
+          "name": "Interactive literary community features"
+        },
+        {
+          "name": "Secure rare book marketplace"
+        }
+      ]
+    },
+    "gallery": [
+      "/img/portfolio/project2/listing9/1.jpg",
+      "/img/portfolio/project2/listing9/2.jpg",
+      "/img/portfolio/project2/listing9/3.jpg",
+      "/img/portfolio/project2/listing9/4.jpg",
+      "/img/portfolio/project2/listing9/5.jpg",
+      "/img/portfolio/project2/listing9/6.jpg"
+    ],
+    "description": {
+      "content": "The digital transformation of Bookclub24 preserves the heritage and expertise of Germany's most respected book collecting platform while introducing modern features that enhance discovery, authentication, and community engagement. The redesigned platform serves both serious collectors seeking rare volumes and casual readers looking to explore literary treasures."
     },
     "nextProject": {
       "id": 1,

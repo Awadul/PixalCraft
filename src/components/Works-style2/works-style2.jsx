@@ -5,11 +5,67 @@ import initIsotope from "../../common/initIsotope";
 import ProjectDataArray from "../../data/project-details2.json";
 
 const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
+  // Create a mapping of category names to filter classes
+  const categoryToFilterClass = {
+    CMS: "brand",
+    WordPress: "brand",
+    "Mobile App": "web",
+    "Web Design": "web",
+    "Web Development": "web",
+    "E-Commerce": "web",
+    "UI/UX Design": "graphic",
+    "Interior Design": "graphic",
+    Architecture: "graphic",
+    "Software Development": "graphic",
+    "Digital Publishing": "graphic",
+    "Sustainable Design": "graphic",
+    "Digital Marketing": "web",
+  };
+
+  // Get unique categories for the filter buttons
+  const getFilterCategories = () => {
+    // Map our internal filter classes to display names
+    const filterLabels = {
+      brand: "CMS",
+      web: "Mobile App",
+      graphic: "Software Development",
+    };
+
+    return Object.keys(filterLabels).map((filterClass) => ({
+      filterClass,
+      displayName: filterLabels[filterClass],
+    }));
+  };
+
+  // Determine which filter class a project belongs to
+  const getCategoryClass = (project) => {
+    // Force certain projects into specific categories
+    if (project.id === 7 || project.id === 8) {
+      return "brand"; // CMS
+    }
+
+    if (project.id === 3 || project.id === 5 || project.id === 6) {
+      return "graphic"; // Software Development
+    }
+
+    // Use the first category from project data
+    const primaryCategory = project.categories?.[0]?.name;
+    if (primaryCategory && categoryToFilterClass[primaryCategory]) {
+      return categoryToFilterClass[primaryCategory];
+    }
+
+    // Default fallback
+    return "graphic";
+  };
+
   React.useEffect(() => {
     setTimeout(() => {
       initIsotope();
     }, 1000);
   }, []);
+
+  const filterCategories = getFilterCategories();
+
   return (
     <>
       <style jsx>{`
@@ -18,14 +74,14 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
           overflow: hidden;
           border-radius: 10px;
         }
-        
+
         .item-img .imago {
           display: block;
           width: 100%;
           height: 250px;
           overflow: hidden;
         }
-        
+
         .item-img .imago img {
           width: 100%;
           height: 100%;
@@ -33,11 +89,11 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
           object-position: center;
           transition: all 0.4s ease;
         }
-        
+
         .item-img .imago:hover img {
           transform: scale(1.1);
         }
-        
+
         .item-img-overlay {
           position: absolute;
           top: 0;
@@ -48,7 +104,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
           opacity: 0;
           transition: all 0.4s ease;
         }
-        
+
         .item-img .imago:hover .item-img-overlay {
           opacity: 1;
         }
@@ -90,15 +146,17 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
                   <span data-filter="*" className="active">
                     All
                   </span>
-                  <span data-filter=".brand">Branding</span>
-                  <span data-filter=".web">Mobile App</span>
-                  <span data-filter=".graphic">Creative</span>
+                  {filterCategories.map((category, index) => (
+                    <span key={index} data-filter={`.${category.filterClass}`}>
+                      {category.displayName}
+                    </span>
+                  ))}
                 </div>
               </div>
             )}
 
             <div className="gallery full-width">
-              {ProjectDataArray.slice(0, 6).map((project, index) => (
+              {ProjectDataArray.map((project, index) => (
                 <div
                   key={project.id}
                   className={`${
@@ -107,14 +165,16 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
                       : grid === 2
                       ? "col-md-6"
                       : "col-12"
-                  } items ${project.categories[0]?.name === "Branding" ? "brand" : 
-                            project.categories[0]?.name === "Mobile App" ? "web" : "graphic"} wow fadeInUp`}
+                  } items ${getCategoryClass(project)} wow fadeInUp`}
                   data-wow-delay=".4s"
                 >
                   <div className="item-img">
                     <Link href={`/project-detailed?id=${project.id}`}>
                       <a className="imago wow">
-                        <img src={project.projectHeaderImage} alt={project.title.big} />
+                        <img
+                          src={project.projectHeaderImage}
+                          alt={project.title.big}
+                        />
                         <div className="item-img-overlay"></div>
                       </a>
                     </Link>
@@ -124,7 +184,8 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
                     <span>
                       <Link href={`/project-detailed?id=${project.id}`}>
                         {project.title.big}
-                      </Link>,
+                      </Link>
+                      ,
                       <Link href={`/project-display`}>
                         {project.categories[0]?.name || "Web Design"}
                       </Link>
