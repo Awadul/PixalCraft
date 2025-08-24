@@ -373,7 +373,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/Welcome">
+                    <Link href="/home">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/3.png" alt="image" />
@@ -391,7 +391,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/homepage/home5-light">
+                    <Link href="/home-light">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/03.png" alt="image" />
@@ -732,7 +732,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/works2/works2-light">
+                    <Link href="/project-display-light">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/w02.png" alt="image" />
@@ -985,7 +985,7 @@ const Demos = () => {
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>
-                    <Link href="/about/about-light">
+                    <Link href="/about-light">
                       <a target="_blank">
                         <div className="img">
                           <img src="/demo-img/about1.png" alt="image" />

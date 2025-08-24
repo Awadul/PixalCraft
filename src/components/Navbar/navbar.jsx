@@ -9,11 +9,11 @@ const Navbar = ({ lr, nr, theme }) => {
   const router = useRouter();
   
   const handleLightModeClick = () => {
-    router.push('/homepage/home5-light/');
+    router.push('/home-light/');
   };
 
   const handleDarkModeClick = () => {
-    router.push('/Welcome/');
+    router.push('/home/');
   };
 
   // Check if we're on a light theme page
@@ -86,12 +86,12 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/homepage/home5-light" : "/Welcome"}>
+              <Link href={isLightTheme ? "/home-light" : "/home"}>
                 <a className="nav-link">Home</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={isLightTheme ? "/about/about-light" : "/about"}>
+              <Link href={isLightTheme ? "/about-light" : "/about"}>
                 <a className="nav-link">About</a>
               </Link>
             </li>
@@ -112,7 +112,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/works2/works2-light" : "/project-display"}>
+              <Link href={isLightTheme ? "/project-display-light" : "/project-display"}>
                 <a className="nav-link">Works</a>
               </Link>
             </li>

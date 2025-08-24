@@ -62,7 +62,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 </a>
                 <a
                   className="dropdown-item"
-                  href={`/Welcome`}
+                  href={`/home`}
                 >
                   Digital Agency
                 </a>
