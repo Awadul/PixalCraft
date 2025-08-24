@@ -1,10 +1,10 @@
 import React from "react";
-import blog1Data from "../../data/blog1.json";
-import LightTheme from "../../layouts/Light";
-import Navbar from "../../components/Navbar/navbar";
-import BlogStanderd from "../../components/Blog-standerd/blog-standerd";
-import PageHeader from "../../components/Page-header/page-header";
-import Footer from "../../components/Footer/footer";
+import blog1Data from "../data/blog1.json";
+import LightTheme from "../layouts/Light";
+import Navbar from "../components/Navbar/navbar";
+import BlogStanderd from "../components/Blog-standerd/blog-standerd";
+import PageHeader from "../components/Page-header/page-header";
+import Footer from "../components/Footer/footer";
 
 const BlogLight = () => {
     const navbarRef = React.useRef(null);

@@ -6,6 +6,7 @@ const SupabaseComments = ({ blogId }) => {
   const [comments, setComments] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   // Load comments from Supabase on component mount
   useEffect(() => {
@@ -152,6 +153,12 @@ const SupabaseComments = ({ blogId }) => {
     });
   };
 
+  const refreshComments = async () => {
+    setIsRefreshing(true);
+    await loadComments();
+    setIsRefreshing(false);
+  };
+
   if (isLoading) {
     return (
       <div className="comments-section">
@@ -172,9 +179,11 @@ const SupabaseComments = ({ blogId }) => {
         <div className="comments-header">
           <h5>Comments ({comments.length})</h5>
           <button 
-            onClick={loadComments}
-            className="refresh-comments"
+            onClick={refreshComments}
+            className={`refresh-comments ${isRefreshing ? 'refreshing' : ''}`}
+            disabled={isRefreshing}
             title="Refresh comments"
+            aria-label="Refresh comments"
           >
             <i className="fas fa-sync-alt"></i>
           </button>
@@ -271,6 +280,53 @@ const SupabaseComments = ({ blogId }) => {
           </Formik>
         </div>
       </div>
+      <style jsx>{`
+        .refresh-comments {
+          background: transparent;
+          border: none;
+          color: var(--color-font);
+          font-size: 16px;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          margin-left: 10px;
+          outline: none;
+        }
+
+        .refresh-comments:hover {
+          background: rgba(255, 255, 255, 0.05);
+          color: var(--color-primary);
+          transform: rotate(45deg);
+        }
+
+        .refresh-comments:active {
+          transform: rotate(360deg);
+        }
+
+        .refreshing {
+          animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        .comments-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+
+        .comments-header h5 {
+          margin-bottom: 0;
+        }
+      `}</style>
     </div>
   );
 };

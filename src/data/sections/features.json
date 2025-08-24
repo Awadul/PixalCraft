@@ -2,25 +2,25 @@
     {
         "id": 1,
         "icon": "pe-7s-paint-bucket",
-        "title": "Graphic Design",
-        "content": "We craft intuitive, future-ready visuals that enhance user experience and strengthen your brand across every digital product."
+        "title": "Creative Design",
+        "content": "We craft intuitive, timeless, and innovative visuals that elevate user experience and strengthen your brand identity across digital platforms."
     },
     {
         "id": 2,
         "icon": "pe-7s-phone",
-        "title": "Web & Mobile Design",
-        "content": "We design responsive interfaces for web and mobile that merge aesthetics with functionality, ensuring smooth user journeys across devices."
+        "title": "Web & Mobile Solutions",
+        "content": "We design and develop responsive web and mobile applications that merge aesthetics with cutting-edge functionality, ensuring seamless user journeys."
     },
     {
         "id": 3,
-        "icon": "pe-7s-display1",
-        "title": "Social Media Marketing",
-        "content": "We craft data-driven campaigns and creative content strategies that amplify your brand’s presence, connect with the right audience, and deliver measurable results."
+        "icon": "pe-7s-rocket",
+        "title": "Digital Marketing",
+        "content": "We create data-driven marketing campaigns, SEO strategies, and social engagement plans that boost visibility, connect with the right audience, and deliver growth."
     },
     {
         "id": 4,
-        "icon": "pe-7s-diskette",
-        "title": "Document Legal Policy",
-        "content": "We create, review, and manage digital legal documents and policies that keep your business compliant, secure, and future-ready."
+        "icon": "pe-7s-cloud",
+        "title": "Cloud & AI Integration",
+        "content": "We provide scalable cloud solutions, AI-powered automation, and smart integrations that prepare your business for the future of technology."
     }
 ]

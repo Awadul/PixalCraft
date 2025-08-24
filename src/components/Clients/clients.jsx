@@ -48,13 +48,13 @@ const Clients = ({theme}) => {
                           <img src={item.darkImage} alt="" />
                         )}
                         <Split>
-                          <a
-                            href="#0"
-                            className="link words chars splitting"
+                          {/* Display URL as simple text with anchor styling on hover */}
+                          <span 
+                            className="link words chars splitting client-url" 
                             data-splitting
                           >
                             {item.url}
-                          </a>
+                          </span>
                         </Split>
                       </div>
                     </div>
@@ -98,13 +98,13 @@ const Clients = ({theme}) => {
                           <img src={item.darkImage} alt="" />
                         )}
                         <Split>
-                          <a
-                            href="#0"
-                            className="link words chars splitting"
+                          {/* Display URL as simple text with anchor styling on hover */}
+                          <span 
+                            className="link words chars splitting client-url" 
                             data-splitting
                           >
                             {item.url}
-                          </a>
+                          </span>
                         </Split>
                       </div>
                     </div>
@@ -115,6 +115,17 @@ const Clients = ({theme}) => {
           </div>
         </div>
       </div>
+      <style jsx global>{`
+        .client-url {
+          cursor: pointer;
+          display: inline-block;
+          color: inherit;
+          text-decoration: none;
+        }
+        .client-url:hover {
+          color: var(--color-primary);
+        }
+      `}</style>
     </section>
   );
 };
