@@ -110,6 +110,24 @@ const Footer = ({ hideBGCOLOR }) => {
                 </p>
               </div>
 
+              <div className="social">
+                <a href="#0" className="icon">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="#0" className="icon">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="#0" className="icon">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="#0" className="icon">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#0" className="icon">
+                  <i className="fab fa-behance"></i>
+                </a>
+              </div>
+
               <div className="copy-right">
                 <p>
                   © 2023, PixelCraft. Crafting digital solutions with passion in Mexico.

@@ -29,8 +29,7 @@ const Services3 = () => {
               </span>
               <h5>Interface Design</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+                Creating intuitive and visually appealing user interfaces that enhance user experience and drive engagement across all digital platforms.
               </p>
               <Link href="/about">
                 <a className="more-stroke">
@@ -46,8 +45,7 @@ const Services3 = () => {
               </span>
               <h5>Creative Always</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+                Delivering innovative and imaginative solutions that push creative boundaries and set new standards in digital design and development.
               </p>
               <Link href="/about">
                 <a className="more-stroke">
@@ -63,8 +61,7 @@ const Services3 = () => {
               </span>
               <h5>Real-time Editing</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+                Providing instant collaboration tools and live editing capabilities that enable seamless teamwork and rapid project iteration.
               </p>
               <Link href="/about">
                 <a className="more-stroke">
@@ -80,8 +77,7 @@ const Services3 = () => {
               </span>
               <h5>Art Concept</h5>
               <p>
-                Implementation and rollout of new network infrastructure,
-                including consolidation.
+                Transforming creative visions into stunning visual concepts that capture brand essence and communicate powerful messages.
               </p>
               <Link href="/about">
                 <a className="more-stroke">
