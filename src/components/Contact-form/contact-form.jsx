@@ -22,9 +22,9 @@ const ContactForm = () => {
       
       // EmailJS configuration
       // You'll need to set up EmailJS account and get these values
-      const serviceId = 'service_xnw0b9n'; // Replace with your EmailJS service ID
-      const templateId = 'template_jr3js0a'; // Replace with your EmailJS template ID
-      const publicKey = 'BnbhofIhP_eFalHCA'; // Replace with your EmailJS public key
+      const serviceId = 'service_4sb2omc'; // Replace with your EmailJS service ID
+      const templateId = 'template_dtos9y6'; // Replace with your EmailJS template ID
+      const publicKey = '9F9GQrjokbmNm_OpC'; // Replace with your EmailJS public key
       
       // Prepare template parameters
       const templateParams = {
