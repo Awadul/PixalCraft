@@ -8,27 +8,7 @@ import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 const Navbar = ({ lr, nr, theme }) => {
   const router = useRouter();
   
-  const handleLightModeClick = () => {
-    router.push('/home-light/');
-  };
-
-  const handleDarkModeClick = () => {
-    router.push('/home/');
-  };
-
-  // Check if we're on a light theme page
-  const isLightTheme = router.pathname.includes('light');
-  
-  // Determine button text and icon based on current theme
-  const buttonText = isLightTheme ? 'Dark' : 'Light';
-  const buttonIcon = isLightTheme ? 'fas fa-moon' : 'fas fa-sun';
-  const buttonColor = isLightTheme ? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.8)';
-  const buttonBorder = isLightTheme ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)';
-  const buttonHoverColor = isLightTheme ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)';
-  const buttonHoverBorder = isLightTheme ? 'rgba(0, 0, 0, 0.4)' : 'rgba(255, 255, 255, 0.4)';
-  
-  // Determine click handler based on current theme
-  const handleThemeClick = isLightTheme ? handleDarkModeClick : handleLightModeClick;
+  // Force dark theme usage across navigation
 
   return (
     <nav
@@ -86,12 +66,12 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/home-light" : "/home"}>
+              <Link href="/home">
                 <a className="nav-link">Home</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={isLightTheme ? "/about-light" : "/about"}>
+              <Link href="/about">
                 <a className="nav-link">About</a>
               </Link>
             </li>
@@ -112,7 +92,7 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/project-display-light" : "/project-display"}>
+              <Link href="/project-display">
                 <a className="nav-link">Works</a>
               </Link>
             </li>
@@ -144,65 +124,16 @@ const Navbar = ({ lr, nr, theme }) => {
             </li>
             */}
             <li className="nav-item">
-              <Link href={isLightTheme ? "/articles-light" : "/articles"}>
+              <Link href="/articles">
                 <a className="nav-link">Blog</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={isLightTheme ? "/contact/contact-light" : "/contact-us"}>
+              <Link href="/contact-us">
                 <a className="nav-link">Contact</a>
               </Link>
             </li>
             
-            {/* Light Mode Toggle Button */}
-            <li className="nav-item" style={{ marginLeft: '20px', marginTop: '20px' }}>
-              <button
-                className="theme-toggle-btn"
-                onClick={handleThemeClick}
-                style={{
-                  background: 'transparent',
-                  border: `1px solid ${buttonBorder}`,
-                  borderRadius: '50px',
-                  padding: '6px 16px',
-                  color: buttonColor,
-                  cursor: 'pointer',
-                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  fontSize: '13px',
-                  fontWeight: '400',
-                  backdropFilter: 'blur(10px)',
-                  WebkitBackdropFilter: 'blur(10px)',
-                  minWidth: 'auto',
-                  outline: 'none',
-                  height: '32px',
-                  lineHeight: '1'
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.borderColor = buttonHoverBorder;
-                  e.target.style.color = buttonHoverColor;
-                  e.target.style.transform = 'translateY(-1px)';
-                  e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.borderColor = buttonBorder;
-                  e.target.style.color = buttonColor;
-                  e.target.style.transform = 'translateY(0)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              >
-                <i 
-                  className={buttonIcon} 
-                  style={{
-                    fontSize: '11px',
-                    opacity: '0.9',
-                    transition: 'transform 0.3s ease'
-                  }}
-                ></i>
-                <span style={{ fontSize: '11px', whiteSpace: 'nowrap' }}>{buttonText}</span>
-              </button>
-            </li>
           </ul>
         </div>
       </div>
