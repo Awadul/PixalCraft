@@ -7,6 +7,14 @@ const SupabaseComments = ({ blogId }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [toast, setToast] = useState({ visible: false, message: "", type: "success" });
+
+  const showToast = (message, type = "success") => {
+    setToast({ visible: true, message, type });
+    setTimeout(() => {
+      setToast(prev => ({ ...prev, visible: false }));
+    }, 3000);
+  };
 
   // Load comments from Supabase on component mount
   useEffect(() => {
@@ -117,16 +125,16 @@ const SupabaseComments = ({ blogId }) => {
 
       if (error) {
         console.error('Error adding comment:', error);
-        alert('Failed to add comment. Please try again.');
+        showToast('Failed to add comment. Please try again.', 'error');
         return;
       }
 
       // Comment will be added via real-time subscription
-      alert('Comment added successfully!');
+      showToast('Comment added successfully!', 'success');
       resetForm();
     } catch (error) {
       console.error('Error adding comment:', error);
-      alert('Failed to add comment. Please try again.');
+      showToast('Failed to add comment. Please try again.', 'error');
     } finally {
       setIsSubmitting(false);
     }
@@ -281,6 +289,40 @@ const SupabaseComments = ({ blogId }) => {
         </div>
       </div>
       <style jsx>{`
+        .toast {
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          z-index: 9999;
+          padding: 14px 18px;
+          border-radius: 10px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+          transform: translateY(20px);
+          opacity: 0;
+          animation: toast-in 0.3s ease forwards;
+        }
+
+        .toast.success {
+          background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .toast.error {
+          background: linear-gradient(135deg, #dc3545, #fd7e14);
+        }
+
+        .toast i {
+          font-size: 16px;
+        }
+
+        @keyframes toast-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
         .refresh-comments {
           background: transparent;
           border: none;
@@ -327,6 +369,12 @@ const SupabaseComments = ({ blogId }) => {
           margin-bottom: 0;
         }
       `}</style>
+      {toast.visible && (
+        <div className={`toast ${toast.type}`} role="status" aria-live="polite">
+          <i className={`fas ${toast.type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i>
+          <span>{toast.message}</span>
+        </div>
+      )}
     </div>
   );
 };
